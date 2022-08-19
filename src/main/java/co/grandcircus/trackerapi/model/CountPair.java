@@ -12,6 +12,7 @@ public class CountPair {
 		super();
 	}
 
+
 	public CountPair(String token, int count) {
 		super();
 		this.token = token;

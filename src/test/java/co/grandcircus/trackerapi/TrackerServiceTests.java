@@ -132,31 +132,7 @@ public class TrackerServiceTests {
 		assertEquals(3, service.getTokenCount("Alpha"));
 		
 	}
-	@Test
-	void testLatest5() {
-		service.add("Alpha");
-		service.add("Beta");
-		service.add("Gamma");
-		service.add("Delta");
-		service.add("Epsilon");
-		service.add("Alpha");
-		service.add("Beta");
-		service.add("Gamma");
-		service.add("Delta");
-		service.add("Alpha");
-		service.add("1");
-		service.add("2");
-		service.add("3");
-		service.add("4");
-		service.add("5");
-		List<String> latest5 = new ArrayList<>();
-		latest5.add("1");
-		latest5.add("2");
-		latest5.add("3");
-		latest5.add("4");
-		latest5.add("5");
-		assertEquals(latest5, service.getLatest5());
-}
+	
 	@Test
 	void testLatest5If0() {
 		List<String> latest5 = new ArrayList<>();

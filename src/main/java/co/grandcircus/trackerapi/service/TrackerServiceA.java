@@ -136,9 +136,9 @@ public class TrackerServiceA implements TrackerService{
 			}
 			return latest;
 		}
-		for (int i = counts.size() - 5 ; i < counts.size() ; i++) {
+		for (int i = counts.size() -1  ; i > counts.size() - 6 ; i--) {
 			 latest.add(counts.get(i).getToken());
-			 
+			 System.out.println(counts.get(i).getToken());
 		}
 			
 
